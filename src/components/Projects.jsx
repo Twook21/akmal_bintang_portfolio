@@ -52,7 +52,8 @@ const Projects = ({ darkMode }) => {
           description:
             "Centralized financial management web app with automated reporting and multi-branch monitoring",
           link: "/projects/web-dev/pgri-finance",
-          image: "https://media.licdn.com/dms/image/v2/D562DAQE-EH6_qnw-_Q/profile-treasury-image-shrink_800_800/B56Zaav.nhGUAY-/0/1746352991189?e=1746975600&v=beta&t=vTiS24KHLrH0nZ8mr7uOKn_pPKevPQ7AhCiJN3oTeUg",
+          image:
+            "https://media.licdn.com/dms/image/v2/D562DAQE-EH6_qnw-_Q/profile-treasury-image-shrink_800_800/B56Zaav.nhGUAY-/0/1746352991189?e=1746975600&v=beta&t=vTiS24KHLrH0nZ8mr7uOKn_pPKevPQ7AhCiJN3oTeUg",
         },
       ],
     },
@@ -71,8 +72,7 @@ const Projects = ({ darkMode }) => {
         {
           id: 2,
           title: "Architectural 3D design",
-          description:
-            "Create 3D designs according to client needs",
+          description: "Create 3D designs according to client needs",
           link: "/projects/design/rowhouse-design",
           image: "/img/Slider/projek3.png",
         },
@@ -88,7 +88,8 @@ const Projects = ({ darkMode }) => {
           description:
             "Automated document tracking and approval system with smart categorization",
           link: "/projects/office-admin/document-workflow",
-          image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKi4R2uM5lThMsr66IJVSwQMCtxJdST1uVw&s",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKi4R2uM5lThMsr66IJVSwQMCtxJdST1uVw&s",
         },
         {
           id: 2,
@@ -96,7 +97,8 @@ const Projects = ({ darkMode }) => {
           description:
             "Digital transformation of attendance tracking with geolocation validation",
           link: "/projects/office-admin/attendance-system",
-          image: "https://cdn.idntimes.com/content-images/community/2022/09/arlington-research-kn-kvidcha0-unsplash-1-e8635462f0371f6841bdaed001cda056-89b84f0b6a0f5b4bfa86e5b67cbc5ec9_600x400.jpg",
+          image:
+            "https://cdn.idntimes.com/content-images/community/2022/09/arlington-research-kn-kvidcha0-unsplash-1-e8635462f0371f6841bdaed001cda056-89b84f0b6a0f5b4bfa86e5b67cbc5ec9_600x400.jpg",
         },
       ],
     },
@@ -121,7 +123,7 @@ const Projects = ({ darkMode }) => {
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           />
         </div>
-        
+
         <h4 className="text-lg font-semibold mb-2">{project.title}</h4>
         <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
           {project.description}
@@ -129,7 +131,7 @@ const Projects = ({ darkMode }) => {
       </div>
     ));
   };
-  
+
   return (
     <section
       id="projects"
@@ -145,16 +147,16 @@ const Projects = ({ darkMode }) => {
           transform: translateY(40px);
           transition: all 0.8s ease-out;
         }
-  
+
         .animate-visible {
           opacity: 1;
           transform: translateY(0);
         }
-  
+
         .animate-delay-200 {
           transition-delay: 200ms;
         }
-  
+
         .animate-delay-400 {
           transition-delay: 400ms;
         }
@@ -169,32 +171,48 @@ const Projects = ({ darkMode }) => {
         >
           Projects
         </h2>
-  
+
         {/* Category Selection */}
-        <div className="flex justify-center mb-12 space-x-4 animate-on-scroll animate-delay-200">
+        {/* Category Selection */}
+        <div className="flex flex-wrap justify-center mb-8 gap-3 md:gap-4 px-2 animate-on-scroll animate-delay-200">
           {Object.keys(projectCategories).map((category) => {
             const CategoryIcon = projectCategories[category].icon;
             return (
               <button
                 key={category}
-                className={`flex items-center px-4 py-2 rounded-xl transition-all duration-300 ${
-                  activeCategory === category
-                    ? darkMode
-                      ? "bg-yellow-500 text-gray-900"
-                      : "bg-[#2d3e50] text-white"
-                    : darkMode
-                    ? "bg-gray-700 text-gray-300 hover:bg-gray-600"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                }`}
+                className={`group flex flex-col md:flex-row items-center p-3 md:px-5 md:py-3 rounded-xl transition-all duration-300 transform
+          text-sm md:text-base font-medium min-w-[130px] md:min-w-[180px] justify-center
+          border ${
+            activeCategory === category
+              ? darkMode
+                ? "bg-yellow-500/90 border-yellow-600 text-gray-900 shadow-lg"
+                : "bg-[#2d3e50] border-[#3b4d60] text-white shadow-lg"
+              : darkMode
+              ? "bg-gray-800/40 border-gray-700/80 hover:bg-gray-700/60 text-gray-300 backdrop-blur-sm hover:border-gray-600 hover:scale-[1.02]"
+              : "bg-white/60 border-gray-200 hover:bg-white text-gray-700 backdrop-blur-sm hover:border-gray-300 hover:scale-[1.02]"
+          }`}
                 onClick={() => setActiveCategory(category)}
               >
-                <CategoryIcon className="mr-2" />
-                {projectCategories[category].title}
+                <CategoryIcon
+                  className={`mb-1.5 md:mb-0 md:mr-2 transition-colors ${
+                    activeCategory === category
+                      ? darkMode
+                        ? "text-gray-900"
+                        : "text-white"
+                      : darkMode
+                      ? "text-yellow-400"
+                      : "text-[#2d3e50]"
+                  }`}
+                  size={activeCategory === category ? "1.1em" : "1em"}
+                />
+                <span className="whitespace-nowrap mt-0.5">
+                  {projectCategories[category].title}
+                </span>
               </button>
             );
           })}
         </div>
-  
+
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto animate-on-scroll animate-delay-400">
           {renderProjects(activeCategory)}
