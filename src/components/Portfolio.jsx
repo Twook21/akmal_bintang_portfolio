@@ -193,7 +193,7 @@ const Portfolio = ({ darkMode }) => {
               darkMode ? "text-yellow-400" : "text-[#2d3e50]"
             }`}
           >
-            <FaLightbulb className="mr-2" /> 
+            <FaLightbulb className="mr-2" />
             Technical Expertise
           </h3>
 
@@ -218,12 +218,24 @@ const Portfolio = ({ darkMode }) => {
                         : "bg-gray-50 hover:bg-gray-100 text-gray-800"
                     }`}
                   >
-                    <div className="flex items-center mb-2">
+                    {/* Tambahkan div wrapper untuk text */}
+                    <div className="flex items-center mb-2 min-w-0">
+                      {" "}
+                      {/* Penting: min-w-0 */}
                       <span className="mr-3" style={{ color: skill.color }}>
                         {skill.icon}
                       </span>
-                      <span className="font-medium text-base">
-                        {skill.name}
+                      <span className="font-medium text-base min-w-0">
+                        {/* Tambahkan div khusus untuk text panjang */}
+                        <div
+                          className={`whitespace-normal break-words ${
+                            skill.name === "HTML/CSS/JavaScript"
+                              ? "text-xs sm:text-sm md:text-base" // Responsive font size
+                              : ""
+                          }`}
+                        >
+                          {skill.name}
+                        </div>
                       </span>
                     </div>
                     <p
