@@ -168,7 +168,7 @@ const About = ({ darkMode }) => {
                   darkMode ? "text-yellow-400" : "text-[#2d3e50]"
                 }`}
               >
-                <FaGraduationCap className="mr-2" /> Pendidikan
+                <FaGraduationCap className="mr-2" /> Education
               </h3>
 
               <div className="space-y-6">
@@ -188,7 +188,7 @@ const About = ({ darkMode }) => {
                       D3 PJJ Teknik Informatika
                     </p>
                     <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
-                      2023 - Sekarang
+                      2023 - Now
                     </p>
                   </div>
                 </div>

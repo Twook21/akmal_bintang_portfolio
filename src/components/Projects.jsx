@@ -6,6 +6,8 @@ import {
   FaRegCircle,
   FaCalendarAlt,
   FaLink,
+  FaUserTie,
+  FaCode,
 } from "react-icons/fa";
 
 const Projects = ({ darkMode }) => {
@@ -46,6 +48,8 @@ const Projects = ({ darkMode }) => {
           image: "/img/Slider/earchive.png",
           date: "May 2025",
           timestamp: new Date("2025-05-01").getTime(),
+          role: "Full Stack Developer",
+          staticOrDynamic: "Dynamic",
         },
         {
           id: 2,
@@ -56,6 +60,8 @@ const Projects = ({ darkMode }) => {
           image: "/img/Slider/fintap.png",
           date: "March 2025",
           timestamp: new Date("2025-03-01").getTime(),
+          role: "Full Stack Developer",
+          staticOrDynamic: "Dynamic",
         },
         {
           id: 3,
@@ -66,6 +72,104 @@ const Projects = ({ darkMode }) => {
           image: "/img/Slider/pgrifinance.png",
           date: "Jan 2025",
           timestamp: new Date("2025-01-01").getTime(),
+          role: "Full Stack Developer",
+          staticOrDynamic: "Dynamic",
+        },
+        {
+          id: 4,
+          title: "Website Perwakilan YPLP PGRI Prov Jawa Barat",
+          description:
+            "Redesigning and developing the educational institution system for managing school data of PGRI in West Java.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/yplp.png",
+          date: "Oct 2024",
+          timestamp: new Date("2024-10-01").getTime(),
+          role: "Full stack Developer",
+          staticOrDynamic: "Dynamic",
+        },
+        {
+          id: 5,
+          title: "WasteGo Site",
+          description:
+            "Developed the user interface of the WasteGo platform using React to enable efficient and environmentally friendly waste management. Responsible for building interactive and responsive features that allow users to submit and track waste collection requests in real-time.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/wastego.png",
+          date: "May 2025",
+          timestamp: new Date("2025-05-01").getTime(),
+          role: "Frontend Developer",
+          staticOrDynamic: "Dynamic",
+        },
+        {
+          id: 6,
+          title: "Twenny4Store",
+          description:
+            "This is my first website i madeThis was my very first website and marked my entry into the world of programming. I developed it as a fully functional e-commerce site using HTML, CSS, and JavaScript, which helped me build a strong foundation in web development.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/24s.png",
+          date: "Nov 2023",
+          timestamp: new Date("2023-11-01").getTime(),
+          role: "Frontend Developer",
+          staticOrDynamic: "Static",
+        },
+        {
+          id: 7,
+          title: "Portal Aspirasi",
+          description:
+            "This website is planned to serve as a platform for public aspirations, acting as a bridge connecting the community with the government. I have also planned to transform it into a dynamic website.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/portalaspirasi.png",
+          date: "March 2024",
+          timestamp: new Date("2024-03-01").getTime(),
+          role: "UI Designer & Frontend Developer",
+          staticOrDynamic: "Static",
+        },
+        {
+          id: 8,
+          title: "Web About Bali",
+          description:
+            "This website was created during my participation in a web development online course from Dicoding.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/bali.png",
+          date: "Des 2023",
+          timestamp: new Date("2023-12-01").getTime(),
+          role: "Frontend Developer",
+          staticOrDynamic: "Static",
+        },
+        {
+          id: 9,
+          title: "FindMe",
+          description:
+            "An application for lost items, inspired by our team common experience of forgetting personal belongings when in public places.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/findme.png",
+          date: "Jan 2025",
+          timestamp: new Date("2024-12-30").getTime(),
+          role: "Frontend Developer",
+          staticOrDynamic: "Dynamic",
+        },
+        {
+          id: 10,
+          title: "NgeFood In",
+          description:
+            "This is my first dynamic web application, built with Laravel and React. The application is designed to resemble a food delivery platform like GoFood.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/ngefoodin.png",
+          date: "August 2024",
+          timestamp: new Date("2024-08-01").getTime(),
+          role: "Fullstack Developer",
+          staticOrDynamic: "Dynamic",
+        },
+        {
+          id: 11,
+          title: "Psycho-Sphere",
+          description:
+            "I was directly involved in the MBTI application project, taking on the role of Frontend Developer. This application is designed to help determine the interests and talents of students across Indonesia.",
+          link: "/projects/web-dev/pgri-finance",
+          image: "/img/Slider/psycho.png",
+          date: "Feb 2025",
+          timestamp: new Date("2025-02-01").getTime(),
+          role: "Frontend Developer",
+          staticOrDynamic: "Dynamic",
         },
       ],
     },
@@ -82,6 +186,7 @@ const Projects = ({ darkMode }) => {
           image: "/img/Slider/projek4.png",
           date: "Jan 2025",
           timestamp: new Date("2025-01-01").getTime(),
+          role: "Lead Designer",
         },
         {
           id: 2,
@@ -91,6 +196,17 @@ const Projects = ({ darkMode }) => {
           image: "/img/Slider/projek3.png",
           date: "June 2024",
           timestamp: new Date("2024-06-18").getTime(),
+          role: "3D Modeler",
+        },
+        {
+          id: 3,
+          title: "Design Costum T-Shirt",
+          description: "Designing custom t-shirts based on client requests.",
+          link: "/projects/design/rowhouse-design",
+          image: "/img/Slider/tshirt.png",
+          date: "June 2024",
+          timestamp: new Date("2024-06-18").getTime(),
+          role: "Graphic Designer",
         },
       ],
     },
@@ -108,6 +224,7 @@ const Projects = ({ darkMode }) => {
     //         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKi4R2uM5lThMsr66IJVSwQMCtxJdST1uVw&s",
     //       date: "20 January 2024",
     //       timestamp: new Date("2024-01-20").getTime(),
+    //       role: "Project Manager",
     //     },
     //     {
     //       id: 2,
@@ -119,6 +236,7 @@ const Projects = ({ darkMode }) => {
     //         "https://cdn.idntimes.com/content-images/community/2022/09/arlington-research-kn-kvidcha0-unsplash-1-e8635462f0371f6841bdaed001cda056-89b84f0b6a0f5b4bfa86e5b67cbc5ec9_600x400.jpg",
     //       date: "12 July 2023",
     //       timestamp: new Date("2023-07-12").getTime(),
+    //       role: "System Analyst",
     //     },
     //   ],
     // },
@@ -199,6 +317,34 @@ const Projects = ({ darkMode }) => {
               >
                 {project.description}
               </p>
+
+              {/* Role Badge */}
+              <div
+                className={`role-badge ${
+                  darkMode ? "text-yellow-300" : "text-[#2d3e50]"
+                }`}
+              >
+                <FaUserTie size={10} className="mr-1" />
+                <span>{project.role}</span>
+              </div>
+
+              {/* Static/Dynamic Badge (only for web development projects) */}
+              {category === "webDev" && project.staticOrDynamic && (
+                <div
+                  className={`static-dynamic-badge ${
+                    darkMode
+                      ? project.staticOrDynamic === "Dynamic"
+                        ? "text-green-400"
+                        : "text-blue-400"
+                      : project.staticOrDynamic === "Dynamic"
+                      ? "text-green-600"
+                      : "text-blue-600"
+                  }`}
+                >
+                  <FaCode size={10} className="mr-1" />
+                  <span>{project.staticOrDynamic}</span>
+                </div>
+              )}
 
               <div
                 className={`project-link ${
@@ -379,6 +525,24 @@ const Projects = ({ darkMode }) => {
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
+        
+        /* Role Badge Styling */
+        .role-badge {
+          display: flex;
+          align-items: center;
+          font-size: 0.7rem;
+          font-weight: 500;
+          margin-top: 2px;
+        }
+        
+        /* Static/Dynamic Badge Styling */
+        .static-dynamic-badge {
+          display: flex;
+          align-items: center;
+          font-size: 0.7rem;
+          font-weight: 500;
+          margin-top: 2px;
+        }
 
         .project-link {
           display: flex;
@@ -461,6 +625,10 @@ const Projects = ({ darkMode }) => {
             font-size: 0.7rem;
           }
           
+          .role-badge, .static-dynamic-badge {
+            font-size: 0.65rem;
+          }
+          
           .category-buttons-container {
             padding: 0 5px;
             gap: 5px;
@@ -495,6 +663,10 @@ const Projects = ({ darkMode }) => {
           
           .project-description {
             font-size: 0.65rem;
+          }
+          
+          .role-badge, .static-dynamic-badge {
+            font-size: 0.6rem;
           }
         }
       `}</style>
