@@ -188,7 +188,7 @@ const About = ({ darkMode }) => {
                       D3 PJJ Teknik Informatika
                     </p>
                     <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
-                      2022 - Sekarang
+                      2023 - Sekarang
                     </p>
                   </div>
                 </div>
@@ -209,7 +209,7 @@ const About = ({ darkMode }) => {
                       Teknik & Bisnis Sepeda Motor
                     </p>
                     <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
-                      2019 - 2022
+                      2020 - 2023
                     </p>
                   </div>
                 </div>
