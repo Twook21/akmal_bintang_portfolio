@@ -274,7 +274,7 @@ const Projects = ({ darkMode }) => {
 
         {/* Project Card */}
         <div
-          className={` hover:pointer-events-auto timeline-content shadow-sm transition-all duration-300  hover:shadow-md ${
+          className={` pointer-events-none timeline-content shadow-sm transition-all duration-300  hover:shadow-md ${
             darkMode
               ? "bg-gray-800 hover:bg-gray-700/90 text-white border border-gray-700"
               : "bg-white hover:bg-gray-50 text-gray-800 border border-gray-200"
