@@ -80,7 +80,7 @@ const Projects = ({ darkMode }) => {
           title: "Website Perwakilan YPLP PGRI Prov Jawa Barat",
           description:
             "Redesigning and developing the educational institution system for managing school data of PGRI in West Java.",
-          link: "/projects/web-dev/pgri-finance",
+          link: "https://perwakilanyplppgrijawabarat.com/",
           image: "/img/Slider/yplp.png",
           date: "Oct 2024",
           timestamp: new Date("2024-10-01").getTime(),
@@ -92,7 +92,7 @@ const Projects = ({ darkMode }) => {
           title: "WasteGo Site",
           description:
             "Developed the user interface of the WasteGo platform using React to enable efficient and environmentally friendly waste management. Responsible for building interactive and responsive features that allow users to submit and track waste collection requests in real-time.",
-          link: "/projects/web-dev/pgri-finance",
+          link: "https://wastegosite.vercel.app/",
           image: "/img/Slider/wastego.png",
           date: "May 2025",
           timestamp: new Date("2025-05-01").getTime(),
@@ -104,7 +104,7 @@ const Projects = ({ darkMode }) => {
           title: "Twenny4Store",
           description:
             "This is my first website i madeThis was my very first website and marked my entry into the world of programming. I developed it as a fully functional e-commerce site using HTML, CSS, and JavaScript, which helped me build a strong foundation in web development.",
-          link: "/projects/web-dev/pgri-finance",
+          link: "https://twook21.github.io/twenny4store/",
           image: "/img/Slider/24s.png",
           date: "Nov 2023",
           timestamp: new Date("2023-11-01").getTime(),
@@ -116,7 +116,7 @@ const Projects = ({ darkMode }) => {
           title: "Portal Aspirasi",
           description:
             "This website is planned to serve as a platform for public aspirations, acting as a bridge connecting the community with the government. I have also planned to transform it into a dynamic website.",
-          link: "/projects/web-dev/pgri-finance",
+          link: "https://twook21.github.io/portalaspirasi/",
           image: "/img/Slider/portalaspirasi.png",
           date: "March 2024",
           timestamp: new Date("2024-03-01").getTime(),
@@ -128,7 +128,7 @@ const Projects = ({ darkMode }) => {
           title: "Web About Bali",
           description:
             "This website was created during my participation in a web development online course from Dicoding.",
-          link: "/projects/web-dev/pgri-finance",
+          link: "https://twook21.github.io/web-sederhana/",
           image: "/img/Slider/bali.png",
           date: "Des 2023",
           timestamp: new Date("2023-12-01").getTime(),
@@ -140,7 +140,7 @@ const Projects = ({ darkMode }) => {
           title: "FindMe",
           description:
             "An application for lost items, inspired by our team common experience of forgetting personal belongings when in public places.",
-          link: "/projects/web-dev/pgri-finance",
+          link: "https://findme.gaenitraining.org/",
           image: "/img/Slider/findme.png",
           date: "Jan 2025",
           timestamp: new Date("2024-12-30").getTime(),
@@ -274,7 +274,7 @@ const Projects = ({ darkMode }) => {
 
         {/* Project Card */}
         <div
-          className={` pointer-events-none timeline-content shadow-sm transition-all duration-300  hover:shadow-md ${
+          className={`timeline-content shadow-sm transition-all duration-300  hover:shadow-md ${
             darkMode
               ? "bg-gray-800 hover:bg-gray-700/90 text-white border border-gray-700"
               : "bg-white hover:bg-gray-50 text-gray-800 border border-gray-200"
