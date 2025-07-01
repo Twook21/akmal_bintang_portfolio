@@ -185,7 +185,7 @@ const About = ({ darkMode }) => {
                       Politeknik Elektronika Negeri Surabaya (PENS)
                     </h4>
                     <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
-                      D3 PJJ (Long Distance) Informatics Engineering
+                      D3 PJJ (Long Distance Learning) Informatics Engineering
                     </p>
                     <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
                       2023 - Now
