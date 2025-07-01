@@ -185,31 +185,10 @@ const About = ({ darkMode }) => {
                       Politeknik Elektronika Negeri Surabaya (PENS)
                     </h4>
                     <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
-                      D3 PJJ Teknik Informatika
+                      D3 PJJ (Long Distance) Informatics Engineering
                     </p>
                     <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
                       2023 - Now
-                    </p>
-                  </div>
-                </div>
-
-                <div className="education-item flex items-start gap-4">
-                  {/* Logo Kampus */}
-                  <img
-                    src="https://smkn1purwakarta.sch.id/public/upload/image/thumbs/n1-logo-1729740448.png" // Ganti dengan path gambar
-                    alt="NEPUR Logo"
-                    className="w-12 h-12 object-contain mt-1 rounded-lg"
-                  />
-                  <div className="flex-1">
-                    <div className="education-dot"></div>
-                    <h4 className="text-lg font-semibold">
-                      SMK Negeri 1 Purwakarta
-                    </h4>
-                    <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
-                      Teknik & Bisnis Sepeda Motor
-                    </p>
-                    <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
-                      2020 - 2023
                     </p>
                   </div>
                 </div>
